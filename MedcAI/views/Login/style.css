@@ -1,0 +1,49 @@
+body {
+    background: linear-gradient(to bottom, #265D74, #000A60);
+    color:rgb(255, 255, 255);
+  }
+
+  .container {
+    margin-top: 100px;
+
+  }
+
+  #username{
+    background-color: #D1EEFF;
+    color:black;
+    border-color: #D1EEFF;
+  }
+
+  #password{
+    background-color: #D1EEFF;
+    color:black;
+    border-color: #D1EEFF;
+  }
+
+  #concluir{
+    background-color: #D1EEFF;
+    color:black;
+    border-color: #D1EEFF;
+  }
+
+  .IrCadastro{
+    font-weight: bold;
+  }
+
+  #EsqSenha{
+    background-color: #D1EEFF;
+    color:black;
+    border-color: #D1EEFF;
+  }
+
+  #logarFacebook{
+    background-color: #D1EEFF;
+    color:black;
+    border-color: #D1EEFF;
+  }
+
+  #logarGoogle{
+    background-color: #D1EEFF;
+    color:black;
+    border-color: #D1EEFF;
+  }
