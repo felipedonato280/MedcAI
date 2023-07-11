@@ -10,11 +10,13 @@ body{
     height: 100%;
 }
 
-.btn{
-    font-size: 32px;
+.bt{
+    text-decoration: none;
+    color: #333;
+    font-size: 2em;
     background-color: #D1EEFF;
     font-family: 'Poppins', sans-serif;
-    width: 334px;
-    height: 90px;
+    width: 80vw;
+    height: 10vh;
     border-radius: 25px;
 }
