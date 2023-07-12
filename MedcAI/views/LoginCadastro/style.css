@@ -7,6 +7,7 @@
 
 body{
     background: linear-gradient(0deg, rgba(0,10,96,1) 30%, rgba(38,93,116,1) 100%);
+    background-attachment: fixed;
     height: 100%;
 }
 
