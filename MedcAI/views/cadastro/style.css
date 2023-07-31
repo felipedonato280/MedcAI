@@ -27,11 +27,13 @@ a{
 }
 
 .btn-concluir{
+    height: 60px;
     color: #333;
     font-size: 2em;
     background-color: #D1EEFF;
     width: 94vw;
     border-radius: 15px;
+    max-width: 400px;
 }
 
 .input{

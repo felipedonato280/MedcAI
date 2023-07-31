@@ -32,6 +32,7 @@ a{
     background-color: #D1EEFF;
     width: 80vw;
     border-radius: 15px;
+    max-width: 400px;
 }
 
 .btn{
@@ -39,6 +40,7 @@ a{
   font-size: 1.5em;
   background-color: #D1EEFF;
   border-radius: 15px;
+  max-width: 500px;
 }
 
 .input{
@@ -74,6 +76,7 @@ a{
       background-color: #D1EEFF;
       width: 80vw;
       border-radius: 15px;
+      max-width: 400px;
   }
   
   .btn{
@@ -81,6 +84,7 @@ a{
     font-size: 1em;
     background-color: #D1EEFF;
     border-radius: 15px;
+    max-width: 500px;
   }
   
   .input{
