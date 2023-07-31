@@ -30,15 +30,8 @@ a{
     color: #333;
     font-size: 2em;
     background-color: #D1EEFF;
-    width: 80vw;
+    width: 94vw;
     border-radius: 15px;
-}
-
-.btn{
-  color: #333;
-  font-size: 1.5em;
-  background-color: #D1EEFF;
-  border-radius: 15px;
 }
 
 .input{
@@ -72,15 +65,8 @@ a{
       color: #333;
       font-size: 1.5em;
       background-color: #D1EEFF;
-      width: 80vw;
+      width: 94vw;
       border-radius: 15px;
-  }
-  
-  .btn{
-    color: #333;
-    font-size: 1em;
-    background-color: #D1EEFF;
-    border-radius: 15px;
   }
   
   .input{
