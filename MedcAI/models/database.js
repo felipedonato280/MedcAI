@@ -3,17 +3,17 @@ const bodyParser = require('body-parser');
 const mysql = require('mysql');
 
 const app = express();
-const port = 3000;
+const port = 3306;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Configuração da conexão com o banco de dados
 const dbConfig = {
-  host: 'seu_host',
-  user: 'seu_usuario',
-  password: 'sua_senha',
-  database: 'seu_banco_de_dados'
+  host: '127.0.0.1',
+  user: 'root',
+  password: 'Meliodas.7',
+  database: 'DBMedcAI'
 };
 
 const connection = mysql.createConnection(dbConfig);
