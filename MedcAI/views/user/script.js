@@ -77,5 +77,3 @@ document.addEventListener("DOMContentLoaded", function () {
       togglePasswordVisibility("confirm-password", "eye-icon-confirm-password");
   });
 });
-
-
