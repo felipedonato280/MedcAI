@@ -28,14 +28,21 @@ p{
 }
 
 .btn-concluir{
-    height: 60px;
-    color: #333;
-    font-weight: 400;
-    font-size: 1.5em;
-    background-color: #D1EEFF;
-    max-width: 400px;
-    width: 80vw;
-    border-radius: 10px;
+  border: none;
+  height: 60px;
+  color: #333;
+  font-weight: 400;
+  font-size: 1.5em;
+  background-color: #D1EEFF;
+  max-width: 400px;
+  width: 80vw;
+  border-radius: 10px;
+  transition-duration: 0.2s;
+}
+
+.btn-concluir:hover{
+  background-color: #00a2ff;
+  color: white;
 }
 
 .input{

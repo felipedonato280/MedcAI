@@ -27,13 +27,20 @@ a{
 }
 
 .btn-concluir{
-    height: 60px;
-    color: #333;
-    font-size: 2em;
-    background-color: #D1EEFF;
-    width: 94vw;
-    border-radius: 15px;
-    max-width: 400px;
+  border: none;
+  height: 60px;
+  color: #333;
+  font-size: 2em;
+  background-color: #D1EEFF;
+  width: 88vw;
+  border-radius: 15px;
+  max-width: 400px;
+  transition-duration: 0.2s;
+}
+
+.btn-concluir:hover{
+  background-color: #00a2ff;
+  color: white;
 }
 
 .input{

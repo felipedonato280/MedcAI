@@ -52,67 +52,6 @@ CREATE TABLE IF NOT EXISTS `BDmedcai`.`Noticias` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
-
--- -----------------------------------------------------
--- Table `BDmedcai`.`IA`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `BDmedcai`.`IA` (
-  `idIA` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `DoençasDermatologicas` LONGTEXT NULL,
-  `Queimaduras` LONGTEXT NULL,
-  `Imagens` BLOB NULL,
-  PRIMARY KEY (`idIA`),
-  UNIQUE INDEX `idIA_UNIQUE` (`idIA` ASC) )
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `BDmedcai`.`Diagnostico`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `BDmedcai`.`Diagnostico` (
-  `idDiagnostico` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `Diagnostico` VARCHAR(400) NULL,
-  `Gravidade` VARCHAR(45) NULL,
-  `PorcentagemChances` VARCHAR(45) NULL,
-  `Usuario_idUsuario` INT UNSIGNED NOT NULL,
-  `IA_idIA` INT UNSIGNED NOT NULL,
-  `ImagemUsuario` BLOB NULL,
-  PRIMARY KEY (`idDiagnostico`),
-  UNIQUE INDEX `idDiagnostico_UNIQUE` (`idDiagnostico` ASC) ,
-  INDEX `fk_Diagnostico_Usuario_idx` (`Usuario_idUsuario` ASC) ,
-  INDEX `fk_Diagnostico_IA1_idx` (`IA_idIA` ASC) ,
-  CONSTRAINT `fk_Diagnostico_Usuario`
-    FOREIGN KEY (`Usuario_idUsuario`)
-    REFERENCES `BDmedcai`.`Usuario` (`idUsuario`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Diagnostico_IA1`
-    FOREIGN KEY (`IA_idIA`)
-    REFERENCES `BDmedcai`.`IA` (`idIA`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `BDmedcai`.`Tratamento`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `BDmedcai`.`Tratamento` (
-  `idTratamento` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `Tratamento` LONGTEXT NULL,
-  `TipoDoença` VARCHAR(100) NULL,
-  `Diagnostico_idDiagnostico` INT UNSIGNED NOT NULL,
-  PRIMARY KEY (`idTratamento`),
-  UNIQUE INDEX `idTratamento_UNIQUE` (`idTratamento` ASC) ,
-  INDEX `fk_Tratamento_Diagnostico1_idx` (`Diagnostico_idDiagnostico` ASC) ,
-  CONSTRAINT `fk_Tratamento_Diagnostico1`
-    FOREIGN KEY (`Diagnostico_idDiagnostico`)
-    REFERENCES `BDmedcai`.`Diagnostico` (`idDiagnostico`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;

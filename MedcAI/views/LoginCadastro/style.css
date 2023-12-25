@@ -21,4 +21,10 @@ body{
     height: 10vh;
     border-radius: 25px;
     max-width: 400px;
+    transition-duration: 0.2s;
 }
+
+.btn:hover{
+    background-color: #00a2ff;
+    color: white;
+  }
