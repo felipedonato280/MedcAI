@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="/MedcAI/controllers/inseririmg.js"></script>
+    <title>Escanner</title>
+</head>
+
+<body>
+
+    <main>
+
+      <div class="container vh-100 custom-container px-4">
+        <div class="row vh-100">
+            <div class="col-md-12 vh-90">
+
+              <div class="pt-4">
+                <a href="./home.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" style="color: #000;" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                    </svg>
+                </a>
+              </div>
+          
+              <div class="div-img d-flex justify-content-center align-items-center flex-column my-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor" class="bi bi-cloud-arrow-up" style="color: #A6A6A6;" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M7.646 5.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708z"/>
+                  <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                </svg>
+                <div class="my-3">
+                    <div class="py-3 d-flex justify-content-center align-items-center">
+                      <div class="container">
+                          <div class="mx-auto">
+                            <div class="pb-5 d-flex justify-content-center mt-auto">
+                              <a href="./">
+                                  <button class="btnEscanear">Procurar</button>
+                              </a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          
+              <div>
+                  <form>
+                      <div class="form-group">
+                        <h4>Quais os sintomas:</h4>
+                          <div class="div-imput justify-content-center">
+                            <input type="text" class="form-control" id="username" placeholder="Sintomas" style="background-color: #D1EEFF; border: none;">
+                          </div>
+                      </div>
+              </div>
+              
+              <div class="pb-5 d-flex justify-content-center mt-auto">
+                  <a href="./">
+                      <button class="btn">Escanear</button>
+                  </a>
+              </div>
+                
+            </div>
+        </div>
+    </div>
+
+    </main>
+
+    <footer class="text-white text-center">
+      <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
+        <div class="col-4">
+          <a href="./noticias.html" class="link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
+              <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
+              <path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
+            </svg>
+            <p>Notícias</p>
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="./home.html" class="link">
+            <img src="./midia/logo2.png" alt="Avatar Logo" style="width: 68px;">
+            <p>MedcAI</p>
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="./usuario.html" class="link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            </svg>
+            <p>Minha conta</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Sora:wght@200;300;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(0deg, rgba(0,10,96,1) 30%, rgb(27, 192, 195) 100%);
+    background-attachment: fixed;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+h4{
+  color: #fff;
+}
+
+.div-img{
+    height: 38vh;
+    background-color: #D1EEFF;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.custom-container {
+  min-width: 260px;
+  max-width: 500px;
+  min-height: 600px;
+  max-height: 844px;
+}
+
+.btnEscanear{
+    margin-top: 2vh;
+    text-decoration: none;
+    border: none;
+    color: #333;
+    font-size: 2em;
+    background-color: #64C7FF;
+    font-family: 'Poppins', sans-serif;
+    width: 80vw;
+    height: 8vh;
+    border-radius: 25px;
+    max-width: 400px;
+    transition-duration: 0.2s;
+}
+
+.btnEscanear:hover{
+    background-color: #00a2ff;
+    color: white;
+  }
+
+  .btn{
+    margin-top: 2vh;
+    text-decoration: none;
+    color: #333;
+    font-size: 2em;
+    background-color: #D1EEFF;
+    font-family: 'Poppins', sans-serif;
+    width: 80vw;
+    height: 8vh;
+    border-radius: 25px;
+    max-width: 400px;
+    transition-duration: 0.2s;
+}
+
+.btn:hover{
+    background-color: #00a2ff;
+    color: white;
+  }
+
+footer{
+    width: 100%;
+    height: 13vh;
+    background-color: #000742;
+    position: fixed;
+    bottom: 0;
+    color:#fff;
+    font-size: 0.8em;
+}
+
+.link{
+    text-decoration: none;
+    color: #fff;
+}
+</style>
